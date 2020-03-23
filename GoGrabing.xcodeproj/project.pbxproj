@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FA3BAB224283F8100EB6B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BAB124283F8100EB6B07 /* AppDelegate.swift */; };
+		3FA3BAB424283F8100EB6B07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BAB324283F8100EB6B07 /* SceneDelegate.swift */; };
+		3FA3BAB624283F8100EB6B07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BAB524283F8100EB6B07 /* ViewController.swift */; };
+		3FA3BAB924283F8100EB6B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3BAB724283F8100EB6B07 /* Main.storyboard */; };
+		3FA3BABC24283F8100EB6B07 /* GoGrabing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BABA24283F8100EB6B07 /* GoGrabing.xcdatamodeld */; };
+		3FA3BABE24283F8200EB6B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3BABD24283F8200EB6B07 /* Assets.xcassets */; };
+		3FA3BAC124283F8200EB6B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3BABF24283F8200EB6B07 /* LaunchScreen.storyboard */; };
+		3FA3BACC24283F8200EB6B07 /* GoGrabingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BACB24283F8200EB6B07 /* GoGrabingTests.swift */; };
+		3FA3BAD724283F8200EB6B07 /* GoGrabingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BAD624283F8200EB6B07 /* GoGrabingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FA3BAC824283F8200EB6B07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA3BAA624283F8100EB6B07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA3BAAD24283F8100EB6B07;
+			remoteInfo = GoGrabing;
+		};
+		3FA3BAD324283F8200EB6B07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA3BAA624283F8100EB6B07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA3BAAD24283F8100EB6B07;
+			remoteInfo = GoGrabing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FA3BAAE24283F8100EB6B07 /* GoGrabing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGrabing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA3BAB124283F8100EB6B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FA3BAB324283F8100EB6B07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3FA3BAB524283F8100EB6B07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FA3BAB824283F8100EB6B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FA3BABB24283F8100EB6B07 /* GoGrabing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoGrabing.xcdatamodel; sourceTree = "<group>"; };
+		3FA3BABD24283F8200EB6B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FA3BAC024283F8200EB6B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FA3BAC224283F8200EB6B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA3BAC724283F8200EB6B07 /* GoGrabingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoGrabingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA3BACB24283F8200EB6B07 /* GoGrabingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoGrabingTests.swift; sourceTree = "<group>"; };
+		3FA3BACD24283F8200EB6B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA3BAD224283F8200EB6B07 /* GoGrabingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoGrabingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA3BAD624283F8200EB6B07 /* GoGrabingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoGrabingUITests.swift; sourceTree = "<group>"; };
+		3FA3BAD824283F8200EB6B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FA3BAAB24283F8100EB6B07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3BAC424283F8200EB6B07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3BACF24283F8200EB6B07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FA3BAA524283F8100EB6B07 = {
+			isa = PBXGroup;
+			children = (
+				3FA3BAB024283F8100EB6B07 /* GoGrabing */,
+				3FA3BACA24283F8200EB6B07 /* GoGrabingTests */,
+				3FA3BAD524283F8200EB6B07 /* GoGrabingUITests */,
+				3FA3BAAF24283F8100EB6B07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FA3BAAF24283F8100EB6B07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3BAAE24283F8100EB6B07 /* GoGrabing.app */,
+				3FA3BAC724283F8200EB6B07 /* GoGrabingTests.xctest */,
+				3FA3BAD224283F8200EB6B07 /* GoGrabingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FA3BAB024283F8100EB6B07 /* GoGrabing */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3BAB124283F8100EB6B07 /* AppDelegate.swift */,
+				3FA3BAB324283F8100EB6B07 /* SceneDelegate.swift */,
+				3FA3BAB524283F8100EB6B07 /* ViewController.swift */,
+				3FA3BAB724283F8100EB6B07 /* Main.storyboard */,
+				3FA3BABD24283F8200EB6B07 /* Assets.xcassets */,
+				3FA3BABF24283F8200EB6B07 /* LaunchScreen.storyboard */,
+				3FA3BAC224283F8200EB6B07 /* Info.plist */,
+				3FA3BABA24283F8100EB6B07 /* GoGrabing.xcdatamodeld */,
+			);
+			path = GoGrabing;
+			sourceTree = "<group>";
+		};
+		3FA3BACA24283F8200EB6B07 /* GoGrabingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3BACB24283F8200EB6B07 /* GoGrabingTests.swift */,
+				3FA3BACD24283F8200EB6B07 /* Info.plist */,
+			);
+			path = GoGrabingTests;
+			sourceTree = "<group>";
+		};
+		3FA3BAD524283F8200EB6B07 /* GoGrabingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3BAD624283F8200EB6B07 /* GoGrabingUITests.swift */,
+				3FA3BAD824283F8200EB6B07 /* Info.plist */,
+			);
+			path = GoGrabingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FA3BAAD24283F8100EB6B07 /* GoGrabing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA3BADB24283F8200EB6B07 /* Build configuration list for PBXNativeTarget "GoGrabing" */;
+			buildPhases = (
+				3FA3BAAA24283F8100EB6B07 /* Sources */,
+				3FA3BAAB24283F8100EB6B07 /* Frameworks */,
+				3FA3BAAC24283F8100EB6B07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoGrabing;
+			productName = GoGrabing;
+			productReference = 3FA3BAAE24283F8100EB6B07 /* GoGrabing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FA3BAC624283F8200EB6B07 /* GoGrabingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA3BADE24283F8200EB6B07 /* Build configuration list for PBXNativeTarget "GoGrabingTests" */;
+			buildPhases = (
+				3FA3BAC324283F8200EB6B07 /* Sources */,
+				3FA3BAC424283F8200EB6B07 /* Frameworks */,
+				3FA3BAC524283F8200EB6B07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA3BAC924283F8200EB6B07 /* PBXTargetDependency */,
+			);
+			name = GoGrabingTests;
+			productName = GoGrabingTests;
+			productReference = 3FA3BAC724283F8200EB6B07 /* GoGrabingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FA3BAD124283F8200EB6B07 /* GoGrabingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA3BAE124283F8200EB6B07 /* Build configuration list for PBXNativeTarget "GoGrabingUITests" */;
+			buildPhases = (
+				3FA3BACE24283F8200EB6B07 /* Sources */,
+				3FA3BACF24283F8200EB6B07 /* Frameworks */,
+				3FA3BAD024283F8200EB6B07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA3BAD424283F8200EB6B07 /* PBXTargetDependency */,
+			);
+			name = GoGrabingUITests;
+			productName = GoGrabingUITests;
+			productReference = 3FA3BAD224283F8200EB6B07 /* GoGrabingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FA3BAA624283F8100EB6B07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = GoGrabing;
+				TargetAttributes = {
+					3FA3BAAD24283F8100EB6B07 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					3FA3BAC624283F8200EB6B07 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3FA3BAAD24283F8100EB6B07;
+					};
+					3FA3BAD124283F8200EB6B07 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3FA3BAAD24283F8100EB6B07;
+					};
+				};
+			};
+			buildConfigurationList = 3FA3BAA924283F8100EB6B07 /* Build configuration list for PBXProject "GoGrabing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FA3BAA524283F8100EB6B07;
+			productRefGroup = 3FA3BAAF24283F8100EB6B07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FA3BAAD24283F8100EB6B07 /* GoGrabing */,
+				3FA3BAC624283F8200EB6B07 /* GoGrabingTests */,
+				3FA3BAD124283F8200EB6B07 /* GoGrabingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FA3BAAC24283F8100EB6B07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3BAC124283F8200EB6B07 /* LaunchScreen.storyboard in Resources */,
+				3FA3BABE24283F8200EB6B07 /* Assets.xcassets in Resources */,
+				3FA3BAB924283F8100EB6B07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3BAC524283F8200EB6B07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3BAD024283F8200EB6B07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FA3BAAA24283F8100EB6B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3BAB624283F8100EB6B07 /* ViewController.swift in Sources */,
+				3FA3BAB224283F8100EB6B07 /* AppDelegate.swift in Sources */,
+				3FA3BABC24283F8100EB6B07 /* GoGrabing.xcdatamodeld in Sources */,
+				3FA3BAB424283F8100EB6B07 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3BAC324283F8200EB6B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3BACC24283F8200EB6B07 /* GoGrabingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3BACE24283F8200EB6B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3BAD724283F8200EB6B07 /* GoGrabingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FA3BAC924283F8200EB6B07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA3BAAD24283F8100EB6B07 /* GoGrabing */;
+			targetProxy = 3FA3BAC824283F8200EB6B07 /* PBXContainerItemProxy */;
+		};
+		3FA3BAD424283F8200EB6B07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA3BAAD24283F8100EB6B07 /* GoGrabing */;
+			targetProxy = 3FA3BAD324283F8200EB6B07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FA3BAB724283F8100EB6B07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA3BAB824283F8100EB6B07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FA3BABF24283F8200EB6B07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA3BAC024283F8200EB6B07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FA3BAD924283F8200EB6B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FA3BADA24283F8200EB6B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FA3BADC24283F8200EB6B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58JZ3RD5UX;
+				INFOPLIST_FILE = GoGrabing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GOGrabIT.GoGrabing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FA3BADD24283F8200EB6B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58JZ3RD5UX;
+				INFOPLIST_FILE = GoGrabing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GOGrabIT.GoGrabing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FA3BADF24283F8200EB6B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58JZ3RD5UX;
+				INFOPLIST_FILE = GoGrabingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GOGrabIT.GoGrabingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoGrabing.app/GoGrabing";
+			};
+			name = Debug;
+		};
+		3FA3BAE024283F8200EB6B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58JZ3RD5UX;
+				INFOPLIST_FILE = GoGrabingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GOGrabIT.GoGrabingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoGrabing.app/GoGrabing";
+			};
+			name = Release;
+		};
+		3FA3BAE224283F8200EB6B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58JZ3RD5UX;
+				INFOPLIST_FILE = GoGrabingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GOGrabIT.GoGrabingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoGrabing;
+			};
+			name = Debug;
+		};
+		3FA3BAE324283F8200EB6B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58JZ3RD5UX;
+				INFOPLIST_FILE = GoGrabingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GOGrabIT.GoGrabingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoGrabing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FA3BAA924283F8100EB6B07 /* Build configuration list for PBXProject "GoGrabing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3BAD924283F8200EB6B07 /* Debug */,
+				3FA3BADA24283F8200EB6B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA3BADB24283F8200EB6B07 /* Build configuration list for PBXNativeTarget "GoGrabing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3BADC24283F8200EB6B07 /* Debug */,
+				3FA3BADD24283F8200EB6B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA3BADE24283F8200EB6B07 /* Build configuration list for PBXNativeTarget "GoGrabingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3BADF24283F8200EB6B07 /* Debug */,
+				3FA3BAE024283F8200EB6B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA3BAE124283F8200EB6B07 /* Build configuration list for PBXNativeTarget "GoGrabingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3BAE224283F8200EB6B07 /* Debug */,
+				3FA3BAE324283F8200EB6B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FA3BABA24283F8100EB6B07 /* GoGrabing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FA3BABB24283F8100EB6B07 /* GoGrabing.xcdatamodel */,
+			);
+			currentVersion = 3FA3BABB24283F8100EB6B07 /* GoGrabing.xcdatamodel */;
+			path = GoGrabing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3FA3BAA624283F8100EB6B07 /* Project object */;
+}
