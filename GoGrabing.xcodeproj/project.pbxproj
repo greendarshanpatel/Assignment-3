@@ -20,15 +20,15 @@
 		3FA3BAE92428543D00EB6B07 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BAE82428543D00EB6B07 /* ItemViewController.swift */; };
 		3FA3BAEB2428762A00EB6B07 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3BAEA2428762A00EB6B07 /* ItemTableViewCell.swift */; };
 		7D0FF5932449ABE000C66422 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FF5922449ABE000C66422 /* MapViewController.swift */; };
+		7D0FF59B2449FD8700C66422 /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0FF5942449FD8700C66422 /* ic_close.png */; };
+		7D0FF59C2449FD8700C66422 /* SHCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FF5952449FD8700C66422 /* SHCollectionViewCell.swift */; };
+		7D0FF59D2449FD8700C66422 /* SHCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0FF5962449FD8700C66422 /* SHCollectionViewCell.xib */; };
+		7D0FF59E2449FD8700C66422 /* ic_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0FF5972449FD8700C66422 /* ic_check.png */; };
+		7D0FF59F2449FD8700C66422 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FF5982449FD8700C66422 /* PickerController.swift */; };
+		7D0FF5A02449FD8700C66422 /* SHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FF5992449FD8700C66422 /* SHViewController.swift */; };
+		7D0FF5A12449FD8700C66422 /* SHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0FF59A2449FD8700C66422 /* SHViewController.xib */; };
 		7D745A7224498B3E00406775 /* coreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D745A7124498B3E00406775 /* coreDataViewController.swift */; };
 		7D745A742449A54B00406775 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D745A732449A54B00406775 /* ImagePickerViewController.swift */; };
-		7D745A7F2449A74700406775 /* SHCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D745A782449A74700406775 /* SHCollectionViewCell.xib */; };
-		7D745A802449A74700406775 /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D745A792449A74700406775 /* ic_close.png */; };
-		7D745A812449A74700406775 /* SHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D745A7A2449A74700406775 /* SHViewController.xib */; };
-		7D745A822449A74700406775 /* SHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D745A7B2449A74700406775 /* SHViewController.swift */; };
-		7D745A832449A74700406775 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D745A7C2449A74700406775 /* PickerController.swift */; };
-		7D745A842449A74700406775 /* ic_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D745A7D2449A74700406775 /* ic_check.png */; };
-		7D745A852449A74700406775 /* SHCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D745A7E2449A74700406775 /* SHCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,15 +68,15 @@
 		3FA3BAE82428543D00EB6B07 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		3FA3BAEA2428762A00EB6B07 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		7D0FF5922449ABE000C66422 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7D0FF5942449FD8700C66422 /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
+		7D0FF5952449FD8700C66422 /* SHCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D0FF5962449FD8700C66422 /* SHCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHCollectionViewCell.xib; sourceTree = "<group>"; };
+		7D0FF5972449FD8700C66422 /* ic_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check.png; sourceTree = "<group>"; };
+		7D0FF5982449FD8700C66422 /* PickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
+		7D0FF5992449FD8700C66422 /* SHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHViewController.swift; sourceTree = "<group>"; };
+		7D0FF59A2449FD8700C66422 /* SHViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHViewController.xib; sourceTree = "<group>"; };
 		7D745A7124498B3E00406775 /* coreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataViewController.swift; sourceTree = "<group>"; };
 		7D745A732449A54B00406775 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
-		7D745A782449A74700406775 /* SHCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SHCollectionViewCell.xib; path = "../../../../../../downloads/Image-Picker-master/Image Picker/Picker Controller/SHCollectionViewCell.xib"; sourceTree = "<group>"; };
-		7D745A792449A74700406775 /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_close.png; path = "../../../../../../downloads/Image-Picker-master/Image Picker/Picker Controller/ic_close.png"; sourceTree = "<group>"; };
-		7D745A7A2449A74700406775 /* SHViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SHViewController.xib; path = "../../../../../../downloads/Image-Picker-master/Image Picker/Picker Controller/SHViewController.xib"; sourceTree = "<group>"; };
-		7D745A7B2449A74700406775 /* SHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SHViewController.swift; path = "../../../../../../downloads/Image-Picker-master/Image Picker/Picker Controller/SHViewController.swift"; sourceTree = "<group>"; };
-		7D745A7C2449A74700406775 /* PickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerController.swift; path = "../../../../../../downloads/Image-Picker-master/Image Picker/Picker Controller/PickerController.swift"; sourceTree = "<group>"; };
-		7D745A7D2449A74700406775 /* ic_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_check.png; path = "../../../../../../downloads/Image-Picker-master/Image Picker/Picker Controller/ic_check.png"; sourceTree = "<group>"; };
-		7D745A7E2449A74700406775 /* SHCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SHCollectionViewCell.swift; path = "../../../../../../downloads/Image-Picker-master/Image Picker/Picker Controller/SHCollectionViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,13 +183,13 @@
 		7D745A772449A6AC00406775 /* imagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				7D745A7D2449A74700406775 /* ic_check.png */,
-				7D745A792449A74700406775 /* ic_close.png */,
-				7D745A7C2449A74700406775 /* PickerController.swift */,
-				7D745A7E2449A74700406775 /* SHCollectionViewCell.swift */,
-				7D745A782449A74700406775 /* SHCollectionViewCell.xib */,
-				7D745A7B2449A74700406775 /* SHViewController.swift */,
-				7D745A7A2449A74700406775 /* SHViewController.xib */,
+				7D0FF5972449FD8700C66422 /* ic_check.png */,
+				7D0FF5942449FD8700C66422 /* ic_close.png */,
+				7D0FF5982449FD8700C66422 /* PickerController.swift */,
+				7D0FF5952449FD8700C66422 /* SHCollectionViewCell.swift */,
+				7D0FF5962449FD8700C66422 /* SHCollectionViewCell.xib */,
+				7D0FF5992449FD8700C66422 /* SHViewController.swift */,
+				7D0FF59A2449FD8700C66422 /* SHViewController.xib */,
 			);
 			path = imagePicker;
 			sourceTree = "<group>";
@@ -298,13 +298,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D745A842449A74700406775 /* ic_check.png in Resources */,
-				7D745A802449A74700406775 /* ic_close.png in Resources */,
+				7D0FF59B2449FD8700C66422 /* ic_close.png in Resources */,
 				3FA3BAC124283F8200EB6B07 /* LaunchScreen.storyboard in Resources */,
+				7D0FF59D2449FD8700C66422 /* SHCollectionViewCell.xib in Resources */,
 				3FA3BABE24283F8200EB6B07 /* Assets.xcassets in Resources */,
-				7D745A812449A74700406775 /* SHViewController.xib in Resources */,
+				7D0FF59E2449FD8700C66422 /* ic_check.png in Resources */,
 				3FA3BAB924283F8100EB6B07 /* Main.storyboard in Resources */,
-				7D745A7F2449A74700406775 /* SHCollectionViewCell.xib in Resources */,
+				7D0FF5A12449FD8700C66422 /* SHViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,12 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0FF59C2449FD8700C66422 /* SHCollectionViewCell.swift in Sources */,
 				7D745A742449A54B00406775 /* ImagePickerViewController.swift in Sources */,
 				3FA3BAE7242849D700EB6B07 /* ItemsViewController.swift in Sources */,
+				7D0FF59F2449FD8700C66422 /* PickerController.swift in Sources */,
 				7D745A7224498B3E00406775 /* coreDataViewController.swift in Sources */,
-				7D745A852449A74700406775 /* SHCollectionViewCell.swift in Sources */,
-				7D745A832449A74700406775 /* PickerController.swift in Sources */,
-				7D745A822449A74700406775 /* SHViewController.swift in Sources */,
+				7D0FF5A02449FD8700C66422 /* SHViewController.swift in Sources */,
 				7D0FF5932449ABE000C66422 /* MapViewController.swift in Sources */,
 				3FA3BAE52428405100EB6B07 /* Item.swift in Sources */,
 				3FA3BAB224283F8100EB6B07 /* AppDelegate.swift in Sources */,
