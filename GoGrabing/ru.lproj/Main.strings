@@ -1,0 +1,60 @@
+
+/* Class = "UIButton"; normalTitle = "View Cart"; ObjectID = "0GV-rf-Yl4"; */
+"0GV-rf-Yl4.normalTitle" = "Просмотр корзины";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "19H-Ou-ThI"; */
+"19H-Ou-ThI.text" = "метка";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4Fv-JU-TV1"; */
+"4Fv-JU-TV1.text" = "метка";
+
+/* Class = "UIButton"; normalTitle = "Get Value"; ObjectID = "5VX-sl-0es"; */
+"5VX-sl-0es.normalTitle" = "Получить ценность";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "9BS-CY-oEO"; */
+"9BS-CY-oEO.text" = "наименование товара";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ct8-4O-sew"; */
+"Ct8-4O-sew.text" = "метка";
+
+/* Class = "UINavigationItem"; title = "Items"; ObjectID = "HL7-cH-OaI"; */
+"HL7-cH-OaI.title" = "Предметы";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "HTr-b4-Wmh"; */
+"HTr-b4-Wmh.normalTitle" = "Сохранить";
+
+/* Class = "UILabel"; text = "StoreName"; ObjectID = "Ive-gX-0GB"; */
+"Ive-gX-0GB.text" = "Название магазина";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "Jh1-lx-Arm"; */
+"Jh1-lx-Arm.title" = "карта";
+
+/* Class = "UIButton"; normalTitle = "Get Image"; ObjectID = "LeG-CZ-uwO"; */
+"LeG-CZ-uwO.normalTitle" = "Получить изображение";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "RFr-jS-Opb"; */
+"RFr-jS-Opb.title" = "Дом";
+
+/* Class = "UILabel"; text = "stepper"; ObjectID = "WI8-zQ-Huo"; */
+"WI8-zQ-Huo.text" = "шаговый";
+
+/* Class = "UITabBarItem"; title = "Core Data"; ObjectID = "aPL-Ga-FeK"; */
+"aPL-Ga-FeK.title" = "Основные данные";
+
+/* Class = "UIButton"; normalTitle = "Add to Cart"; ObjectID = "cTJ-VD-a4A"; */
+"cTJ-VD-a4A.normalTitle" = "добавить в корзину";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fjJ-Ow-8hE"; */
+"fjJ-Ow-8hE.text" = "метка";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gls-1e-MAc"; */
+"gls-1e-MAc.text" = "метка";
+
+/* Class = "UILabel"; text = "Product Type"; ObjectID = "j3v-1k-lba"; */
+"j3v-1k-lba.text" = "Тип продукта";
+
+/* Class = "UITabBarItem"; title = "Camera"; ObjectID = "vWf-5O-7fK"; */
+"vWf-5O-7fK.title" = "камера";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yEa-Wg-uYh"; */
+"yEa-Wg-uYh.text" = "метка";
