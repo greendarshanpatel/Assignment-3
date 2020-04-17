@@ -8,7 +8,7 @@
 
 import UIKit
 
-class coreDataViewController: UIViewController {
+class CoreDataDetailViewController: UIViewController {
 
     //https://www.raywenderlich.com/7569-getting-started-with-core-data-tutorial#toc-anchor-002
     // follow above steps
@@ -17,21 +17,23 @@ class coreDataViewController: UIViewController {
     }
     
     let store: ItemStore =  ItemStore()
-    
 
-    @IBOutlet weak var txtSpngItemName: UITextField!
-    @IBOutlet weak var txtSpngStoreName: UITextField!
-    
-    @IBAction func addItem(_ sender: Any) {
-        store.saveItem(itemName:txtSpngItemName.text! ,storeName: txtSpngStoreName.text!)
-        
-//        store.saveItem(itemName:"paper" ,storeName: "Store")
-
+    var stepperValue : Double = 0.0
+    @IBOutlet weak var stepperLbl: UILabel!
+    @IBAction func stepper(_ sender: UIStepper) {
+        stepperLbl.text = "\(sender.value)"
+        stepperValue = sender.value
     }
     
-    @IBAction func viewItems(_ sender: Any) {
-        
-        
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+
+        store.saveItem(itemName: "paper",storeName: "walmart")
+
+      
+    }
+    @IBAction func getValuePressed(_ sender: Any) {
+
         store.fetchItems{
                     (result)-> Void in
                     switch result {
