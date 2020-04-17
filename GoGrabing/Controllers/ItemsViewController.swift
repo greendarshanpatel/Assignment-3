@@ -12,7 +12,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var TableView: UITableView!
     
-    var Data = [Item]()
+    var DataRecived = [Item]()
     var result : ItemResponce?
     var selectedItem : Item!
    
@@ -21,13 +21,14 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
         TableView.delegate = self
         TableView.dataSource = self
+        SearchBar.delegate = self
         callit()
        
     }
     
     private func callit() {
-        let jsonUrlString = "https://grabapi.azurewebsites.net/item"
-                guard let url = URL(string: jsonUrlString) else { return }
+        let myUrl = "https://grabapi.azurewebsites.net/item"
+                guard let url = URL(string: myUrl) else { return }
                 
                 URLSession.shared.dataTask(with: url) { (data, response, err) in
                     //perhaps check err
@@ -38,9 +39,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     do {
                         self.result = try JSONDecoder().decode(ItemResponce.self, from: data)
                         print(self.result?.data.count as Any)
-//                        guard let _result = self.result else {return}
-//                        onResult(_result)
-                        self.Data = self.result?.data ?? []
+                        self.DataRecived = self.result?.data ?? []
                          DispatchQueue.main.async {
                             self.TableView.reloadData()
                         }
@@ -54,22 +53,20 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Data.count
+        return DataRecived.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TableView.dequeueReusableCell(withIdentifier: "ItemCell") as! ItemTableViewCell
         
         cell.customView.layer.cornerRadius = cell.customView.frame.height / 2
-        if let image = UIImage(named: Data[indexPath.row].image){
+        if let image = UIImage(named: DataRecived[indexPath.row].image){
             cell.productImage.image = image }
-        //print(Data[indexPath.row].image)
-//        var thisItemstore = Data[indexPath.row].store.storeName
-//        print(thisItemstore)
+      
         cell.productImage.layer.cornerRadius = cell.productImage.frame.height / 2
-        cell.productName.text = Data[indexPath.row].name
-        cell.productCost.text = String(Data[indexPath.row].cost)
-        if let imageTwo = UIImage(named: "\(Data[indexPath.row].store.storeName).png"){
+        cell.productName.text = DataRecived[indexPath.row].name
+        cell.productCost.text = "$\(String(DataRecived[indexPath.row].cost))"
+        if let imageTwo = UIImage(named: "\(DataRecived[indexPath.row].store.storeName).png"){
         cell.StoreImage.image = imageTwo }
         return cell
     }
@@ -77,7 +74,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 100
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedItem = Data[indexPath.row]
+        selectedItem = DataRecived[indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "ItemsToItem", sender: nil)
     }
@@ -97,8 +94,8 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 // implementing search bar and its delegate methods
 extension ItemsViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.count != 0 {
-            Data = Data.filter({ (Item) -> Bool in
+        if (searchText.count != 0) {
+            DataRecived = DataRecived.filter({(Item) -> Bool in
                 return Item.name.contains(searchText)
             })
         }
@@ -113,7 +110,8 @@ extension ItemsViewController: UISearchBarDelegate {
         SearchBar.text = ""
         SearchBar.setShowsCancelButton(false, animated: true)
         SearchBar.endEditing(true)
-        callit()
+        DataRecived = []
+       callit()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -121,6 +119,7 @@ extension ItemsViewController: UISearchBarDelegate {
         SearchBar.endEditing(true)
     }
 }
+
 
 
 

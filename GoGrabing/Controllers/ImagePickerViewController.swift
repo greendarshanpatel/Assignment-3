@@ -8,23 +8,27 @@
 
 import UIKit
 
-class ImagePickerViewController: UIViewController {
+class ImagePickerViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     var imagePicker = UIImagePickerController()
+      
+      override func viewDidLoad() {
+          super.viewDidLoad()
+          
+          
+          // Do any additional setup after loading the view.
+      }
+      
+      @IBOutlet weak var ImageViewOutlet: UIImageView!
+      @IBAction func ChooseImage(_ sender: UIButton) {
+          let picker = PickerController()
+          picker.applyFilter = true // to apply filter after selecting the picture by default false
+          picker.selectImage(self){ image in
+              DispatchQueue.main.async {
+                  self.ImageViewOutlet.image = image
+                  self.ImageViewOutlet.contentMode = .scaleAspectFit
+              }
+          }
+      }
 
 }

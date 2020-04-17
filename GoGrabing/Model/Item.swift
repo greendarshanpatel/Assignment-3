@@ -62,9 +62,25 @@ public final class Item: Codable {
     }
 }
 
+public final class Cart {
+    struct cartStuff {
+        var StuffItem : Item
+        var Stuffquantity : Double
+    }
+    
+    var cartCost: Double = 0.0
+    
+    var cartItems : [cartStuff]
+    
+    //initializer
+    init( cartCost: Double,cartItems:[cartStuff]) {
+        self.cartCost = cartCost
+        self.cartItems = cartItems
+    }
+    
+}
 
-//{"status":200,"message":"Successfull","data":[{"id":2,"itemTypeID":1,"cost":199.0,"weight":5.0,"name":"Sprite","image":" ","storeId":1,"itemType":{"id":1,"itemType":"Beverage"},"store":{"id":1,"storeName":"Zehrs"}}]}
-// https://grabapi.azurewebsites.net/item
+
 
 public final class Store:Codable {
 

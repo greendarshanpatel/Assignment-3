@@ -20,6 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>To get images for this view</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To get current Location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To keep your location up to date</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To Get current location</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To Show Image Here</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

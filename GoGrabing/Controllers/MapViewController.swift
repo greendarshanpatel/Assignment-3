@@ -7,24 +7,34 @@
 //
 
 import UIKit
+import CoreLocation
 
-class MapViewController: UIViewController {
-
+class MapViewController: UIViewController, CLLocationManagerDelegate {
+    let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var latitudeLabel: UILabel!
+    
+    @IBOutlet weak var longitudeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        latitudeLabel.text = "Latitude : \(locValue.latitude)"
+        longitudeLabel.text = "Longitude :\(locValue.longitude)"
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
-    */
-
+    
 }
