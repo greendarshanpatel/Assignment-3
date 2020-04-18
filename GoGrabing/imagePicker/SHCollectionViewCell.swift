@@ -5,7 +5,7 @@
 
 
 import UIKit
-/SHCollectionViewCell
+///SHCollectionViewCell
 class SHCollectionViewCell: UICollectionViewCell {
     @IBOutlet var filterNameLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
