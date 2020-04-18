@@ -1,0 +1,111 @@
+
+/* Class = "UIButton"; normalTitle = "View Cart"; ObjectID = "0GV-rf-Yl4"; */
+"0GV-rf-Yl4.normalTitle" = "Voir le panier";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "19H-Ou-ThI"; */
+"19H-Ou-ThI.text" = "Étiquette";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4Fv-JU-TV1"; */
+"4Fv-JU-TV1.text" = "Étiquette";
+
+/* Class = "UIButton"; normalTitle = "Choose Image"; ObjectID = "5Yd-5W-lbe"; */
+"5Yd-5W-lbe.normalTitle" = "Choisissez l'image";
+
+/* Class = "UILabel"; text = "Image Picker"; ObjectID = "5ch-nb-XWS"; */
+"5ch-nb-XWS.text" = "Sélecteur d'images";
+
+/* Class = "UILabel"; text = "Item Name"; ObjectID = "8B4-RY-1J3"; */
+"8B4-RY-1J3.text" = "Nom de l'article";
+
+/* Class = "UILabel"; text = "Core Data"; ObjectID = "8aY-EM-uNn"; */
+"8aY-EM-uNn.text" = "Données de base";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "9BS-CY-oEO"; */
+"9BS-CY-oEO.text" = "Nom du produit";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ct8-4O-sew"; */
+"Ct8-4O-sew.text" = "Étiquette";
+
+/* Class = "UINavigationItem"; title = "Items"; ObjectID = "HL7-cH-OaI"; */
+"HL7-cH-OaI.title" = "Articles";
+
+/* Class = "UILabel"; text = "Empty"; ObjectID = "Hbn-8C-PdE"; */
+"Hbn-8C-PdE.text" = "Vide";
+
+/* Class = "UILabel"; text = "StoreName"; ObjectID = "Ive-gX-0GB"; */
+"Ive-gX-0GB.text" = "Nom du magasin";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "Jh1-lx-Arm"; */
+"Jh1-lx-Arm.title" = "Carte";
+
+/* Class = "UILabel"; text = "Longitude"; ObjectID = "KCA-Hd-kkk"; */
+"KCA-Hd-kkk.text" = "Longitude";
+
+/* Class = "UIButton"; normalTitle = "Get Image"; ObjectID = "LeG-CZ-uwO"; */
+"LeG-CZ-uwO.normalTitle" = "Obtenir l'image";
+
+/* Class = "UITableViewSection"; headerTitle = "Views"; ObjectID = "OvS-hP-3wE"; */
+"OvS-hP-3wE.headerTitle" = "Vues";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "RFr-jS-Opb"; */
+"RFr-jS-Opb.title" = "Accueil";
+
+/* Class = "UIViewController"; title = "Image Picker"; ObjectID = "TFU-SM-Dto"; */
+"TFU-SM-Dto.title" = "Sélecteur d'images";
+
+/* Class = "UIButton"; normalTitle = "Add Item"; ObjectID = "USj-57-OaU"; */
+"USj-57-OaU.normalTitle" = "Ajouter un item";
+
+/* Class = "UILabel"; text = "Empty"; ObjectID = "XvL-0P-y9Y"; */
+"XvL-0P-y9Y.text" = "Vide";
+
+/* Class = "UITabBarItem"; title = "Core Data"; ObjectID = "aPL-Ga-FeK"; */
+"aPL-Ga-FeK.title" = "Données de base";
+
+/* Class = "UILabel"; text = "Latitude"; ObjectID = "bec-mg-V4T"; */
+"bec-mg-V4T.text" = "Latitude";
+
+/* Class = "UILabel"; text = "Store"; ObjectID = "cF3-fa-bot"; */
+"cF3-fa-bot.text" = "Boutique";
+
+/* Class = "UIButton"; normalTitle = "Add to Cart"; ObjectID = "cTJ-VD-a4A"; */
+"cTJ-VD-a4A.normalTitle" = "Ajouter au chariot";
+
+/* Class = "UIButton"; normalTitle = "Clear Image"; ObjectID = "cjJ-jz-yUa"; */
+"cjJ-jz-yUa.normalTitle" = "Image claire";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fjJ-Ow-8hE"; */
+"fjJ-Ow-8hE.text" = "Étiquette";
+
+/* Class = "UILabel"; text = "Camera"; ObjectID = "gdy-sM-xRc"; */
+"gdy-sM-xRc.text" = "Caméra";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gls-1e-MAc"; */
+"gls-1e-MAc.text" = "Étiquette";
+
+/* Class = "UILabel"; text = "Product Type"; ObjectID = "j3v-1k-lba"; */
+"j3v-1k-lba.text" = "type de produit";
+
+/* Class = "UILabel"; text = "Map"; ObjectID = "msI-E5-SXI"; */
+"msI-E5-SXI.text" = "Carte";
+
+/* Class = "UIButton"; normalTitle = "Open Shopping List"; ObjectID = "o1q-cq-5Vy"; */
+"o1q-cq-5Vy.normalTitle" = "Ouvrir la liste d'achats";
+
+/* Class = "UILabel"; text = "Live Location"; ObjectID = "pL6-PA-qR3"; */
+"pL6-PA-qR3.text" = "Localisation en direct";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "uNS-uf-4t4"; */
+"uNS-uf-4t4.text" = "Accueil";
+
+/* Class = "UITabBarItem"; title = "Camera"; ObjectID = "vWf-5O-7fK"; */
+"vWf-5O-7fK.title" = "Caméra";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yEa-Wg-uYh"; */
+"yEa-Wg-uYh.text" = "Étiquette";
+
+/* Class = "UINavigationItem"; title = "Core Data"; ObjectID = "yoQ-h8-juB"; */
+"yoQ-h8-juB.title" = "Données de base";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ywu-52-iVL"; */
+"ywu-52-iVL.title" = "Article";

@@ -73,6 +73,8 @@
 		3FC808C9244A35A100D06F09 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemStore.swift; path = ../../ItemStore.swift; sourceTree = "<group>"; };
 		3FDB207F244A98D400123D69 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		3FDB2080244A98D400123D69 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3FDB2081244A9BC000123D69 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		3FDB2082244A9BC000123D69 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7D04AF09244A837B00B4483D /* UIMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuTableViewController.swift; sourceTree = "<group>"; };
 		7D04AF0D244A83E500B4483D /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		7D0FF5922449ABE000C66422 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				en,
 				Base,
 				ru,
+				fr,
 			);
 			mainGroup = 3FA3BAA524283F8100EB6B07;
 			productRefGroup = 3FA3BAAF24283F8100EB6B07 /* Products */;
@@ -397,6 +400,7 @@
 			children = (
 				3FA3BAB824283F8100EB6B07 /* Base */,
 				3FDB207F244A98D400123D69 /* ru */,
+				3FDB2081244A9BC000123D69 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -406,6 +410,7 @@
 			children = (
 				3FA3BAC024283F8200EB6B07 /* Base */,
 				3FDB2080244A98D400123D69 /* ru */,
+				3FDB2082244A9BC000123D69 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
