@@ -569,7 +569,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZZ-nb-sfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="cEo-yt-ce7">
                     <connections>
-                        <action selector="resignKeyBoard:" destination="eNn-81-JMS" id="sWh-2C-3sw"/>
+                        <action selector="resignKeyBoard:" destination="eNn-81-JMS" id="E12-fZ-SxO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -596,12 +596,12 @@
                                     <action selector="ChooseImage:" destination="TFU-SM-Dto" eventType="touchUpInside" id="aZi-xb-9dK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-nb-XWS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-nb-XWS">
                                 <rect key="frame" x="122" y="44" width="170" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="4cC-rz-TPc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

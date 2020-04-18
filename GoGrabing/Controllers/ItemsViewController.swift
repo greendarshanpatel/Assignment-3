@@ -33,8 +33,8 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
        
        func transitionToNew(_ menuType: MenuType)
        {
-        print("!!!!!!!!!!!!!!!!!!!")
-        print(menuType)
+        //print("!!!!!!!!!!!!!!!!!!!")
+        //print(menuType)
            if let tabBarController = self.view.window!.rootViewController as? UITabBarController {
                switch menuType {
                case .HOME:

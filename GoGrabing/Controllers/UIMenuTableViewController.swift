@@ -26,7 +26,7 @@ class UIMenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let menuType = MenuType(rawValue: indexPath.row) else { return }
-        print("!!!!!!!!!!!!!!    \(menuType)")
+        //print("!!!!!!!!!!!!!!    \(menuType)")
         dismiss(animated: true){ [weak self] in
             self?.didTapMenuType?(menuType)
         }
