@@ -1,15 +1,17 @@
-//  Created by Darshan Patel on 2020-03-22.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 
 import UIKit
 
+//SHViewControllerDelegate
 public protocol SHViewControllerDelegate {
     func shViewControllerImageDidFilter(image: UIImage)
     func shViewControllerDidCancel()
 }
 
+//Image picker filter
 open class SHViewController: UIViewController {
     public var delegate: SHViewControllerDelegate?
     fileprivate let filterNameList = [
@@ -72,6 +74,7 @@ open class SHViewController: UIViewController {
         collectionView?.register(nib, forCellWithReuseIdentifier: "cell")
     }
 
+//    Change filter on left swipe
     @IBAction func imageViewDidSwipeLeft() {
         if filterIndex == filterNameList.count - 1 {
             filterIndex = 0
@@ -86,6 +89,7 @@ open class SHViewController: UIViewController {
         scrollCollectionViewToIndex(itemIndex: filterIndex)
     }
 
+//    Change filter on right swipe
     @IBAction func imageViewDidSwipeRight() {
         if filterIndex == 0 {
             filterIndex = filterNameList.count - 1
@@ -101,6 +105,7 @@ open class SHViewController: UIViewController {
         scrollCollectionViewToIndex(itemIndex: filterIndex)
     }
 
+//    Apply filter on image
     func applyFilter() {
         let filterName = filterNameList[filterIndex]
         if let image = self.image {
@@ -109,6 +114,7 @@ open class SHViewController: UIViewController {
         }
     }
 
+//    Generate filtered Image
     func createFilteredImage(filterName: String, image: UIImage) -> UIImage {
         // 1 - create source image
         let sourceImage = CIImage(image: image)
@@ -129,6 +135,7 @@ open class SHViewController: UIViewController {
         return filteredImage
     }
 
+//    resize image
     func resizeImage(image: UIImage) -> UIImage {
         let ratio: CGFloat = 0.3
         let resizedSize = CGSize(width: Int(image.size.width * ratio), height: Int(image.size.height * ratio))
@@ -139,6 +146,7 @@ open class SHViewController: UIViewController {
         return resizedImage!
     }
 
+//   when user click on close
     @IBAction func closeButtonTapped() {
         if let delegate = self.delegate {
             delegate.shViewControllerDidCancel()
@@ -146,6 +154,7 @@ open class SHViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+//    When user clcik on done
     @IBAction func doneButtontapped() {
         if let delegate = self.delegate {
             delegate.shViewControllerImageDidFilter(image: (imageView?.image)!)

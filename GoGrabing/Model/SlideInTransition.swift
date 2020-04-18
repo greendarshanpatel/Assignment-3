@@ -2,12 +2,14 @@
 //  SlideInTransition.swift
 //  GoGrabing
 //
-//  Created by Farshad on 2020-04-17.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import UIKit
 
+//SlideInTransition
+//animation class for slidein
 class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     var isPresenting = false

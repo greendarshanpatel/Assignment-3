@@ -1,8 +1,10 @@
-//  Created by Darshan Patel on 2020-03-22.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import UIKit
+
+//Image picker controller
 class PickerController: NSObject {
     
     var picker = UIImagePickerController();
@@ -11,6 +13,7 @@ class PickerController: NSObject {
     var pickImageCallback : ((UIImage) -> ())?;
     var applyFilter : Bool = false
 
+//    open popup for option when user click on select iamge
     func selectImage(_ viewController: UIViewController, _ callback: @escaping ((UIImage) -> ())) {
         pickImageCallback = callback;
         self.viewController = viewController;
@@ -34,6 +37,8 @@ class PickerController: NSObject {
         alert.popoverPresentationController?.sourceView = self.viewController!.view
         viewController.present(alert, animated: true, completion: nil)
     }
+    
+//    Open camera action
     func openCamera(){
         alert.dismiss(animated: true, completion: nil)
         if(UIImagePickerController .isSourceTypeAvailable(.camera)){
@@ -41,12 +46,14 @@ class PickerController: NSObject {
             self.viewController!.present(picker, animated: true, completion: nil)
         }
     }
+//    Open gallery action
     func openGallery(){
         picker.sourceType = .photoLibrary
         picker.allowsEditing = false
         self.viewController!.present(picker, animated: true, completion: nil)
     }
 }
+//implemented Image picker handler
 extension PickerController: SHViewControllerDelegate {
     func shViewControllerImageDidFilter(image: UIImage) {
         pickImageCallback?(image)
@@ -55,6 +62,7 @@ extension PickerController: SHViewControllerDelegate {
     func shViewControllerDidCancel() {
     }
 }
+//Implemented image picker controller
 extension PickerController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)

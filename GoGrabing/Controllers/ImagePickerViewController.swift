@@ -2,28 +2,31 @@
 //  ImagePickerViewController.swift
 //  GoGrabing
 //
-//  Created by Darshan on 2020-04-17.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import UIKit
 
+//
 class ImagePickerViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     var popOverSubViewAdded = false
     @IBOutlet var popOverView: UIView!
     
-    
+    //clear Image
     @IBAction func clearImage(_ sender: Any) {
         self.popOverView.removeFromSuperview()
         self.ImageViewOutlet.image = UIImage(named: "ImagePlaceholder")
     }
     
+    // Open Image Chooser
     @IBAction func openImageChooser(_ sender: Any) {
         self.popOverView.removeFromSuperview()
         openImageChooser()
     }
     
+//    Get IMage Picker
     var imagePicker = UIImagePickerController()
       
       override func viewDidLoad() {
@@ -32,6 +35,7 @@ class ImagePickerViewController: UIViewController,UIImagePickerControllerDelegat
         self.view.addGestureRecognizer(gesture)
       }
     
+    //Remove popup of image select
     @objc func checkAction(sender : UITapGestureRecognizer) {
         if(popOverSubViewAdded)
         {
@@ -53,6 +57,7 @@ class ImagePickerViewController: UIViewController,UIImagePickerControllerDelegat
         openImageChooser()
       }
     
+//    click when user click on choose image
     @IBAction func openImageChooser()
     {
         let picker = PickerController()

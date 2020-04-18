@@ -2,13 +2,13 @@
 //  Item.swift
 //  GoGrabing
 //
-//  Created by Darshan Patel on 2020-03-22.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import Foundation
 
-
+//Item Model for API
 public final class Item: Codable {
 
      public let id : Int
@@ -62,6 +62,7 @@ public final class Item: Codable {
     }
 }
 
+//Cart class for Add to cart
 public final class Cart {
     struct cartStuff {
         var StuffItem : Item
@@ -81,7 +82,7 @@ public final class Cart {
 }
 
 
-
+//Class for Item Store
 public final class Store:Codable {
 
     public let id : Int
@@ -103,6 +104,7 @@ public final class Store:Codable {
     }
 }
 
+//Class for ItemType
 public final class ItemType:Codable {
 
     public let id : Int
@@ -125,6 +127,7 @@ public final class ItemType:Codable {
     
 }
 
+//ItemResponse Class
 public final class ItemResponce:Codable {
 
     public let status : Int

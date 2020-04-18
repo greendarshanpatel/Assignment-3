@@ -2,7 +2,7 @@
 //  ItemViewController.swift
 //  GoGrabing
 //
-//  Created by Darshan Patel on 2020-03-22.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
@@ -10,9 +10,10 @@ import UIKit
 
 
 
-
+//ItemViewController
 class ItemViewController: UIViewController {
     var itemCount : Double = 1
+//    Intialize control
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var price: UILabel!
@@ -28,7 +29,7 @@ class ItemViewController: UIViewController {
     var userCart = Cart(cartCost: 0.0, cartItems: [])
     
     
-    
+//    Display selected items information
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "\(showItem.name) at \(showItem.store.storeName) "
@@ -44,6 +45,7 @@ class ItemViewController: UIViewController {
         
     }
     
+//  click event for Add to cart button
     @IBAction func AddToCart(_ sender: Any) {
         // if rr == true {
         userCart.cartCost += showItem.cost * itemCount
@@ -53,10 +55,12 @@ class ItemViewController: UIViewController {
        
     }
 
+//    click event for view cart
     @IBAction func ViewCartPressed(_ sender: Any) {
         showAlert(for: "Cart Not Available")
     }
 
+//    Display alert
     func showAlert(for alert: String) {
         let alertController = UIAlertController(title: nil, message: alert, preferredStyle: UIAlertController.Style.alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)

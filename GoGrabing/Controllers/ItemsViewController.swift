@@ -2,12 +2,12 @@
 //  ItemsViewController.swift
 //  GoGrabing
 //
-//  Created by Darshan Patel on 2020-03-22.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import UIKit
-
+//ItemsViewController
 class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var TableView: UITableView!
@@ -17,7 +17,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var selectedItem : Item!
     let transition = SlideInTransition()
        
-       
+//       menu button event
        @available(iOS 13.0, *)
        @IBAction func didsTapMenu(_ sender: UIBarButtonItem) {
            guard let menuViewController = storyboard?.instantiateViewController(identifier: "UIMenuTableViewController") as? UIMenuTableViewController else {return}
@@ -30,7 +30,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
            
        }
        
-       
+//       open menu based on menuType
        func transitionToNew(_ menuType: MenuType)
        {
         //print("!!!!!!!!!!!!!!!!!!!")
@@ -67,6 +67,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
        
     }
     
+//    get Items from API
     private func callit() {
         let myUrl = "https://grabapi.azurewebsites.net/item"
                 guard let url = URL(string: myUrl) else { return }
@@ -97,6 +98,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return DataRecived.count
     }
 
+//    Set infroamtion in table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TableView.dequeueReusableCell(withIdentifier: "ItemCell") as! ItemTableViewCell
         

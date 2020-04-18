@@ -2,14 +2,14 @@
 //  StepperStore.swift
 //  GoGrabing
 //
-//  Created by Student on 2020-04-17.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-
+//Result enum for entity
 enum ItemResult {
     case success([ShoppingItem])
     case failure(Error)
@@ -20,8 +20,10 @@ enum StoreResult {
     case failure(Error)
 }
 
+//ItemStore
 class ItemStore {
 
+//    persistentContainer for SQLite
     let persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "GoGrabing")
         
@@ -47,22 +49,20 @@ class ItemStore {
         return container
     }()
     
+//    Get SQLite file location
     static func getDocumentsDirectory()-> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
     
+//    Fetch items from SQLite
     func fetchItems(completion: @escaping(ItemResult)->Void) {
-        
-        print("called1")
         let managedContext = persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<ShoppingItem> = ShoppingItem.fetchRequest()
-        print("called2")
         managedContext.perform {
             do {
                 let allItems = try managedContext.fetch(fetchRequest)
-                print("called3")
                 completion(.success(allItems))
             } catch {
                 print("failed")
@@ -71,6 +71,7 @@ class ItemStore {
         }
     }
     
+//    Fetch Stores from SQLite
     func fetchStores(completion: @escaping(StoreResult)->Void) {
         let managedContext = persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<ShoppingStore> = ShoppingStore.fetchRequest()
@@ -90,26 +91,7 @@ class ItemStore {
     func saveItem( itemName :String,storeName: String){
         let managedContext = persistentContainer.viewContext
 
-//        var storeFound : ShoppingStore? =  nil
-//
-//        self.fetchStores{
-//            (result)-> Void in
-//            switch result {
-//            case let .success(stores):
-//                for ShippingStore in stores {
-//                    if storeName == ShippingStore.name {
-//                        storeFound = ShippingStore
-//                        break;
-//                    }
-//                }
-//            case .failure:
-//                print("failed")
-//            }
-//        }
-        
-        
-        
-        // 2
+//        create entity
         let entityItem =
           NSEntityDescription.entity(forEntityName: "ShoppingItem",
                                      in: managedContext)!
@@ -123,26 +105,14 @@ class ItemStore {
         var shoppingStore = NSManagedObject(entity: entityStore,
         insertInto: managedContext)
         
-        
+//        set information in entitys
         shoppingStore.setValue(Int.random(in: 0 ... 10000), forKey: "id")
         shoppingStore.setValue(storeName, forKey: "name")
         item.setValue(Int.random(in: 0 ... 10000), forKeyPath: "id")
         item.setValue(itemName, forKeyPath: "name")
         item.setValue(shoppingStore, forKeyPath: "shoppingStore")
         
-        
-        // 3
-        
-//        if !(storeFound != nil){
-           
-//        }else{
-//            shoppingStore = storeFound!
-//        }
-
-        
-        
-
-        // 4
+        // save entity in coredata
         do {
           try managedContext.save()
             print("saved")

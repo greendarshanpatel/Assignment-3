@@ -2,12 +2,13 @@
 //  coreDataViewController.swift
 //  GoGrabing
 //
-//  Created by Darshan on 2020-04-17.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import UIKit
 
+//CoreDataViewController
 class coreDataViewController: UIViewController {
 
     // follow above steps
@@ -16,6 +17,7 @@ class coreDataViewController: UIViewController {
         getStored()
     }
     
+//    ImageStore for Coredata
     let store: ItemStore =  ItemStore()
     
     @IBAction func resignKeyBoard(_ sender: UITapGestureRecognizer) {
@@ -23,11 +25,14 @@ class coreDataViewController: UIViewController {
         txtSpngStoreName.resignFirstResponder()
     }
     
+//   Initialize controller on view
     @IBOutlet weak var txtSpngItemName: UITextField!
     @IBOutlet weak var txtSpngStoreName: UITextField!
     
     @IBOutlet weak var storedStoreName: UILabel!
     @IBOutlet weak var storedItemName: UILabel!
+    
+//    Click event for add item button
     @IBAction func addItem(_ sender: Any) {
         store.saveItem(itemName:txtSpngItemName.text! ,storeName: txtSpngStoreName.text!)
         showAlert(for: "\(txtSpngItemName.text ?? "Empty"),\(txtSpngStoreName.text ?? "Empty") is Saved")
@@ -35,9 +40,12 @@ class coreDataViewController: UIViewController {
 
     }
     
+//    Click event for View items button
     @IBAction func viewItems(_ sender: Any) {
         getStored()
     }
+    
+//    display last inserted Information
     func getStored (){
         store.fetchItems{
             (result)-> Void in
@@ -55,7 +63,7 @@ class coreDataViewController: UIViewController {
         }
     }
     
-    
+//    Display Alert
     func showAlert(for alert: String) {
         let alertController = UIAlertController(title: nil, message: alert, preferredStyle: UIAlertController.Style.alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)

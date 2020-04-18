@@ -2,12 +2,12 @@
 //  ItemTableViewCell.swift
 //  GoGrabing
 //
-//  Created by Darshan Patel on 2020-03-23.
+//  Created by Darshan,Bhavik, Madan, Farshad on 2020-03-22.
 //  Copyright © 2020 GoGrabing. All rights reserved.
 //
 
 import UIKit
-
+//ItemTableViewCell
 class ItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var productImage: UIImageView!
