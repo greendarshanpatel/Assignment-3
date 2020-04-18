@@ -32,8 +32,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        latitudeLabel.text = "Latitude : \(locValue.latitude)"
-        longitudeLabel.text = "Longitude :\(locValue.longitude)"
+        latitudeLabel.text = "\(locValue.latitude)"
+        longitudeLabel.text = "\(locValue.longitude)"
         print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
     

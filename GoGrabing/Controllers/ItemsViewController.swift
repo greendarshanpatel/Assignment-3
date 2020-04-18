@@ -15,6 +15,47 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var DataRecived = [Item]()
     var result : ItemResponce?
     var selectedItem : Item!
+    let transition = SlideInTransition()
+       
+       
+       @available(iOS 13.0, *)
+       @IBAction func didsTapMenu(_ sender: UIBarButtonItem) {
+           guard let menuViewController = storyboard?.instantiateViewController(identifier: "UIMenuTableViewController") as? UIMenuTableViewController else {return}
+           menuViewController.didTapMenuType = { menuType in
+               self.transitionToNew(menuType)
+           }
+           menuViewController.modalPresentationStyle = .overCurrentContext
+           menuViewController.transitioningDelegate = self
+           present(menuViewController, animated: true)
+           
+       }
+       
+       
+       func transitionToNew(_ menuType: MenuType)
+       {
+        print("!!!!!!!!!!!!!!!!!!!")
+        print(menuType)
+           if let tabBarController = self.view.window!.rootViewController as? UITabBarController {
+               switch menuType {
+               case .HOME:
+                   tabBarController.selectedIndex = 0
+                   break
+                   case .CORE_DATA:
+                       tabBarController.selectedIndex = 1
+                   break
+                   case .CAMEA:
+                       tabBarController.selectedIndex = 2
+                   break
+                   case .MAP:
+                       tabBarController.selectedIndex = 3
+                   break
+               default:
+                   tabBarController.selectedIndex = 0
+                   break
+               }
+               
+           }
+       }
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +105,7 @@ class ItemsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.productImage.image = image }
       
         cell.productImage.layer.cornerRadius = cell.productImage.frame.height / 2
-        cell.productName.text = DataRecived[indexPath.row].name
+        cell.productName.text = DataRecived[indexPath.row].name.capitalized
         cell.productCost.text = "$\(String(DataRecived[indexPath.row].cost))"
         if let imageTwo = UIImage(named: "\(DataRecived[indexPath.row].store.storeName).png"){
         cell.StoreImage.image = imageTwo }
@@ -105,7 +146,6 @@ extension ItemsViewController: UISearchBarDelegate {
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         SearchBar.setShowsCancelButton(true, animated: true)
     }
-    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         SearchBar.text = ""
         SearchBar.setShowsCancelButton(false, animated: true)
@@ -120,7 +160,17 @@ extension ItemsViewController: UISearchBarDelegate {
     }
 }
 
-
+extension ItemsViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+    }
+}
 
 
 
