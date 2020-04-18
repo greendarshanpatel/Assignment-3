@@ -71,10 +71,8 @@
 		3FA3BAE82428543D00EB6B07 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		3FA3BAEA2428762A00EB6B07 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		3FC808C9244A35A100D06F09 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemStore.swift; path = ../../ItemStore.swift; sourceTree = "<group>"; };
-		3FEF2393244A2DAA00D1BDF6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		3FEF2394244A2DAA00D1BDF6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		3FEF2395244A302500D1BDF6 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
-		3FEF2396244A302500D1BDF6 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3FDB207F244A98D400123D69 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		3FDB2080244A98D400123D69 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7D04AF09244A837B00B4483D /* UIMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuTableViewController.swift; sourceTree = "<group>"; };
 		7D04AF0D244A83E500B4483D /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		7D0FF5922449ABE000C66422 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -294,7 +292,6 @@
 				en,
 				Base,
 				ru,
-				"fr-CA",
 			);
 			mainGroup = 3FA3BAA524283F8100EB6B07;
 			productRefGroup = 3FA3BAAF24283F8100EB6B07 /* Products */;
@@ -399,8 +396,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3FA3BAB824283F8100EB6B07 /* Base */,
-				3FEF2393244A2DAA00D1BDF6 /* ru */,
-				3FEF2395244A302500D1BDF6 /* fr-CA */,
+				3FDB207F244A98D400123D69 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -409,8 +405,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3FA3BAC024283F8200EB6B07 /* Base */,
-				3FEF2394244A2DAA00D1BDF6 /* ru */,
-				3FEF2396244A302500D1BDF6 /* fr-CA */,
+				3FDB2080244A98D400123D69 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
